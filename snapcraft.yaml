@@ -1,0 +1,34 @@
+name: hello-xiaoguo
+version: 1.0.18
+vendor: Snappy Developers <snappy-devel@lists.ubuntu.com>
+icon: hello.png
+binaries:
+  echo:
+    exec: bin/echo
+  env:
+    exec: bin/env
+  evil:
+    exec: bin/evil
+  createfile:
+    exec: bin/createfile
+  showdev:
+    exec: bin/showdev
+  usehw:
+    exec: bin/usehw
+  sh:
+    exec: bin/sh    
+    
+summary: Hello xiaoguo
+description: This is a simple hello world example
+
+parts:
+ hello:
+  plugin: copy
+  files:
+    ./bin/echo: bin/echo
+    ./bin/env: bin/env
+    ./bin/evil: bin/evil
+    ./bin/showdev: bin/showdev
+    ./bin/usehw: bin/usehw
+    ./bin/sh: bin/sh
+    ./bin/createfile: bin/createfile
