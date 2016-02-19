@@ -25,10 +25,4 @@ parts:
  hello:
   plugin: copy
   files:
-    ./bin/echo: bin/echo
-    ./bin/env: bin/env
-    ./bin/evil: bin/evil
-    ./bin/showdev: bin/showdev
-    ./bin/usehw: bin/usehw
-    ./bin/sh: bin/sh
-    ./bin/createfile: bin/createfile
+    ./bin: bin    
